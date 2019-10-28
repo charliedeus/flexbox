@@ -1,22 +1,29 @@
-html, 
-body, 
-#app {
+html, body, #app {
   height: 100%;
   margin: 0;
 }
 
 #app {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  align-content: flex-start;
 }
 
 .box {
-  width: 300px;
+  width: 150px;
   height: 60px;
   background: red;
   margin: 5px;
+}
+
+.red {
+  order: 1;
+}
+
+.green {
+  background: green;
+  order: 2;
+}
+
+.blue {
+  background: blue;
+  order: 0;
 }
